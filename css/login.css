@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../images/loginbg.jpg) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 280px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    
+    /*border-radius: 5px;
+    padding: 20px;
+    width: 300px;*/
+  }
+  
+  .box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box h2 {
+    text-align: center;
+  }
+  
+  .inputBox {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .inputBox input {
+    border: none;
+   outline: none;
+   background: none;
+  
+  /* color: white; */
+   font-size: 18px;
+   width: 80%;
+   float: left;
+   margin: 0  10px;
+  }
+  
+  .inputBox span {
+   /* position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;*/
+    width:100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    border-bottom: 1px solid #4caf50;
+    /*color: #999;*/
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span {
+    top: -12px;
+    font-size: 12px;
+   /* color: #1c8adb;*/
+  }
+  
+  .inputBox i {
+    /*position: absolute;
+    top: 10px;
+    right: 10px;*/
+    width: 26px;
+    float: left;
+    text-align: center;
+    /*color: #999;*/
+  }
+  
+  input[type="submit"] {
+    /*background-color: #1c8adb;*/
+    /*color: #ff*;*/
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    /*color: #1c8adb;*/
+  }
